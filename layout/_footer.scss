@@ -1,0 +1,142 @@
+// footer
+footer {
+  background-color: $primary;
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+  color: #fff;
+  .mobile {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1.5rem;
+  }
+  img {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .footerMenu {
+    margin-bottom: 2rem;
+    li {
+      margin-right: 3rem;
+      @include pad768 {
+        font-size: 14px;
+      }
+    }
+  }
+  .footerIcon {
+    li {
+      margin-right: 2rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .connection {
+    padding-bottom: 1.5rem;
+    p {
+      font-size: 2.25rem;
+    }
+    .footerTel {
+      margin-left: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    .footerMail {
+      margin-left: 0.75rem;
+    }
+  }
+
+  .footerEnd {
+    p{
+      margin-left: 2.3rem;
+    }
+    span {
+      font-size: 0.8rem;
+    }
+  }
+
+  // footer pad-768 斷點設定
+  @include pad768 {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 2.5rem 3rem;
+    .footerIcon {
+      img {
+        width: 24px;
+      }
+      li {
+        margin-right: 1.2rem;
+      }
+    }
+    .connection {
+      li {
+        margin-right: 0;
+        &:first-child {
+          img {
+            margin-bottom: 1rem;
+            margin-right: -0.6rem;
+          }
+        }
+      }
+      img {
+        width: 32px;
+      }
+      p {
+        font-size: 1.25rem;
+      }
+    }
+    .footerLogo {
+      display: none;
+    }
+    .footerEnd {
+      p{
+        margin-left: 0;
+      }  
+      span {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+
+  // footer mobile-767 斷點設定
+  @include mobile {
+    padding: 1.5rem 0.75rem;
+    .footerMenu {
+      display: none;
+    }
+    .mobile {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: start;
+    }
+    .connection {
+      img {
+        width: 13px;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .footerEnd {
+      flex-direction: column;
+      align-items: start;
+      position: relative;
+    }
+    .endMobile {
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-left: 0;
+        margin-top: 0.5rem;
+      }
+    }
+    .footerLogo {
+      position: absolute;
+      display: block;
+      width: 46px;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

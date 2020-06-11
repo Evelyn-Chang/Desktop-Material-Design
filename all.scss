@@ -1,0 +1,227 @@
+@import "scss/variables";
+@import "scss/reset";
+@import "scss/base";
+@import "scss/mixin";
+@import "scss/utilities";
+
+// layout
+@import "layout/header";
+@import "layout/footer";
+
+// pages
+@import "pages/index";
+@import "pages/faq";
+
+
+
+
+// -----------------------------< start >-----------------------------------
+// header
+// .navbar {
+//   background-color: $primary;
+//   padding-left: 88px;
+//   padding-right: 68px;
+//   h1 a {
+//     display: block;
+//     background-image: url(images/Home/logo-new_工作區域1.png);
+//     width: 80px;
+//     height: 49px;
+//     @include hide-text;
+//   }
+//   .navbarItem {
+//     &:hover {
+//       background: darken($primary, 10%);
+//     }
+//     a {
+//       display: block;
+//       padding: 40px 20px;
+//       font-size: 1.25rem;
+//       color: #fff;
+//       text-decoration: none;
+//     }
+//     @media (max-width: 767px) {
+      
+//     }
+//   }
+// }
+
+// banner
+// .banner {
+//   background-image: url(images/Home/68@2x.png);
+//   height: 840px;
+//   @include bg-cover;
+//   .bannerInner {
+//     color: $very-dark-red;
+//     height: 100%;
+//     p {
+//       font-size: 2.25rem;
+//     }
+//     h2 {
+//       font-size: 4rem;
+//     }
+//     // banner-desktop 1200 斷點設定
+//     @media (max-width: 1200px) {
+//       padding: 48px;
+//     }
+//     // banner-mobile 767 斷點設定
+//     @media (max-width: 767px) {
+//       background-image: url(images/Home/68.png);
+//       @include bg-cover;
+//       p {
+//         font-size: 1.25rem;
+//       }
+//       h2 {
+//         font-size: 3rem;
+//       }
+//     }
+//     // banner-mobile 375 斷點設定
+//     @media (max-width: 375px) {
+//       padding-right: 0.75rem;
+//       p {
+//         font-size: 1rem;
+//       }
+//       h2 {
+//         font-size: 2rem;
+//       }
+//     }
+//   }
+// }
+
+// about
+// .about {
+//   background-color: rgb(251, 242, 242);
+//   color: $very-dark-red;
+//   text-align: center;
+//   padding: 64px 80px;
+//   margin-bottom: 64px;
+//   h3 {
+//     font-size: 3rem;
+//     margin-bottom: 2.75rem;
+//   }
+//   .aboutItem {
+//     width: 22%;
+//     margin-right: 1.5rem;
+//     // &:nth-child(4) {
+//     //   padding-right: 0;
+//     // }
+//     img {
+//       width: 100px;
+//       height: 100px;
+//     }
+//     h4 {
+//       font-size: 1.5rem;
+//       margin-top: 2.5rem;
+//       margin-bottom: 0.25rem;
+//     }
+//     p {
+//       color: #000;
+//       line-height: 1.5rem;
+//     }
+//   }
+//   // about-pad 992 斷點設定 
+//   @media (max-width: 992px) {
+//     .aboutItem {
+//       width: 45%;
+//       padding: 5%;
+//       margin-right: 0;
+//       h4{
+//         margin-top: 1rem;
+//         margin-bottom: 0.8rem;
+//       }
+//     }
+//     .order-1 {
+//       order: 2;
+//     }
+//     .order-2 {
+//       order: 2;
+//     }
+//   }
+//   // about-mobile 767 斷點設定
+//   @media (max-width: 767px) {
+//     padding: 0;
+//     padding-bottom: 3rem;
+//     h3{
+//       font-size: 2rem;
+//       padding-top: 2.5rem;
+//       margin-bottom: 2rem;
+//     }
+//     .aboutItem {
+//       width: 80%;
+//       padding: 2rem;
+//     }
+//   }
+//   // about-mobile 375 斷點設定
+//   @media (max-width: 375px) {
+//     h3{
+//       font-size: 1.5rem;
+//     }
+//     .aboutItem {
+//       width: 90%;
+//       padding: 1.25rem;
+//     }
+//   }
+// }
+
+// product
+// .product {
+//   font-size: 3rem;
+//   padding-bottom: 80px;
+
+//   img{
+//     display: block;
+//   }
+//   h3 {
+//     color: $very-dark-red;
+//     text-align: center;
+//     margin-bottom: 60px;
+//   }
+//   .productList {
+//     color: $primary;
+//     margin-bottom: 32px;
+//     &:last-child {
+//       margin-bottom: 0;
+//     }
+//     .sunglasses {
+//       cursor: pointer;
+
+//     }
+//     .item {
+//       margin-left: 24px;
+//     }
+//     h4 {
+//       font-style: italic;
+//       margin-left: 8px;
+//       &:nth-child(2) {
+//         margin-right: 24px;
+//       }
+//     }
+
+//     // product-desktop 1200 斷點設定
+//     @media (max-width: 1200px) {
+//       &:nth-child(2) {
+//         flex-direction: row;
+//       }
+//       .sunglasses, .optical, .functional {
+//         width: 60%;
+//         padding-left: 48px;
+//       }
+//       .item {
+//         width: 40%;
+//         justify-content: center;
+//       }
+//     }
+//     // product-pad 992 斷點設定
+//     @media (max-width: 992px) {
+//       .item {
+//         font-size: 2rem;
+//         img{
+//           width: 32px;
+//           height: 32px;
+//         }
+//       }
+//     }
+    
+//   }    
+// }
+
+

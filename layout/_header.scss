@@ -1,0 +1,51 @@
+// header
+.navbar {
+  background-color: $primary;
+  padding-left: 88px;
+  padding-right: 68px;
+  @include mobile {
+    padding: 5px 10px;
+  }
+  .ham-icon {
+    display: none;
+    color: white;
+
+    // ham-icon mobile-767 斷點設定
+    @include mobile {
+      display: block;
+      font-size: 22px;
+    }
+  }
+  h1 a {
+    display: block;
+    background-image: url(images/Home/logo-new_工作區域1.png);
+    width: 80px;
+    height: 49px;
+    @include bg-cover;
+    @include hide-text;
+
+    // navbar mobile-767 斷點設定
+    @include mobile {
+      width: 48px;
+      height: 30px;
+      margin: 5px 0;
+    }
+  }
+  .navbarItem {
+    &:hover {
+      background: darken($primary, 10%);
+    }
+    a {
+      display: block;
+      padding: 40px 20px;
+      font-size: 1.25rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    // navbarItem mobile-767 斷點設定
+    @include mobile {
+      display: none;
+    }
+  }
+}

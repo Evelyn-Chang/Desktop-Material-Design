@@ -1,0 +1,428 @@
+// banner
+.banner {
+  background-image: url(images/Home/68.png);
+  height: 840px;
+  @include bg-cover;
+  .bannerInner {
+    height: 100%;
+    color: $very-dark-red;
+    p {
+      font-size: 2.25rem;
+    }
+    h2 {
+      font-size: 4rem;
+    }
+  }
+
+  // banner pad-992 斷點設定
+  @include pad {
+    .bannerInner {
+      padding-right: 0.75rem;
+      p {
+        font-size: 1.25rem;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+  // banner mobile-767 斷點設定
+  @include mobile {
+    height: 394px;
+    .bannerInner {
+      p {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+// about
+.about {
+  background-color: rgb(251, 242, 242);
+  color: $very-dark-red;
+  text-align: center;
+  padding: 4rem 0;
+  margin-bottom: 64px;
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 2.75rem;
+  }
+  .aboutItem {
+    width: 22%;
+    margin-right: 1.5rem;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    h4 {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.25rem;
+    }
+    p {
+      color: #000;
+      line-height: 1.5rem;
+    }
+  }
+  // aboutItem pad-992 斷點設定
+  @include pad {
+    .aboutItem {
+      width: 45%;
+      padding: 5%;
+      margin-right: 0;
+      h4 {
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+      }
+      .order-1 {
+        order: 2;
+      }
+      .order-2 {
+        order: 2;
+      }
+    }
+  }
+  // aboutItem mobile-767 斷點設定
+  @include mobile {
+    padding: 2rem 0;
+    margin-bottom: 1.5rem;
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .aboutItem {
+      width: 90%;
+      padding: 1rem;
+    }
+  }
+}
+
+// product
+.product {
+  font-size: 3rem;
+  padding-bottom: 80px;
+  img {
+    display: block;
+  }
+  h3 {
+    color: $very-dark-red;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .productList {
+    color: $primary;
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .sunglasses {
+      cursor: pointer;
+    }
+    .item {
+      margin-left: 24px;
+    }
+    h4 {
+      font-style: italic;
+      margin-left: 8px;
+      &:nth-child(2) {
+        margin-right: 24px;
+      }
+    }
+  }
+  // productList desktop-1200 斷點設定
+  @include desktop {
+    .productList {
+      .sunglasses,
+      .optical,
+      .functional {
+        width: 60%;
+        padding-left: 48px;
+      }
+      &:nth-child(2) {
+        flex-direction: row;
+      }
+      .item {
+        width: 40%;
+        justify-content: center;
+      }
+    }
+  }
+
+  // productList pad-992 斷點設定
+  @include pad {
+    font-size: 2rem;
+    .item {
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  // productList mobile-767 斷點設定
+  @include mobile {
+    padding-bottom: 1.5rem;
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .productList {
+      position: relative;
+      color: #fff;
+      font-size: 1.5rem;
+      .sunglasses,
+      .optical,
+      .functional {
+        width: 90%;
+        padding-left: 0;
+        margin: 0 auto;
+      }
+      .item {
+        position: absolute;
+        left: 26%;
+        h4 {
+          font-size: 1.5rem;
+        }
+        img {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
+}
+
+// brand
+.brand {
+  background-image: url(images/Home/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png);
+  @include bg-cover;
+  h3 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 60px;
+  }
+
+  // brand mobile-767 斷點設定
+  @include mobile {
+    h3 {
+      font-size: 1.5rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+    }
+  }
+  .brandInner {
+    padding: 0 40px;
+    img {
+      display: block;
+    }
+    .innerTop {
+      margin-bottom: 60px;
+      .innerLeft {
+        margin-right: 8px;
+      }
+      .innerRight {
+        .topLogo {
+          margin-bottom: 8px;
+        }
+        .bottomLogo_right {
+          margin-left: 8px;
+        }
+      }
+      // brand mobile-767 斷點設定
+      @include mobile {
+        margin-bottom: 1.25rem;
+      }
+    }
+    .innerBottom {
+      padding-bottom: 479px;
+      .pos-relative {
+        position: relative;
+      }
+      li {
+        max-width: 585px;
+        background-color: #fff;
+      }
+      img {
+        opacity: 0.5;
+      }
+      span {
+        color: $primary;
+        font-size: 3.5rem;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 46%;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      // innerBottom pad-992 斷點設定
+      @include pad {
+        span {
+          font-size: 2.5rem;
+        }
+      }
+
+      // innerBottom mobile-767 斷點設定
+      @include mobile {
+        ul {
+          flex-wrap: wrap;
+        }
+        li {
+          margin: 0 auto;
+          margin-bottom: 1.5rem;
+        }
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+// customer
+.customer {
+  margin-bottom: 80px;
+  margin-top: -385px;
+  h3 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 60px;
+  }
+  img {
+    display: block;
+  }
+  .customerItem {
+    width: calc(25% - 1.2rem);
+  }
+  .itemContent {
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+    padding: 1rem;
+    p {
+      font-size: 1rem;
+      padding-bottom: 1rem;
+    }
+    span {
+      font-size: 1rem;
+      color: #707070;
+    }
+  }
+
+  // customerItem pad-992 斷點設定
+  @include pad {
+    margin-top: -450px;
+    .customerItem {
+      width: calc(48% - 1rem);
+      margin-bottom: 2rem;
+    }
+  }
+
+  // customerItem mobile-767 斷點設定
+  @include mobile {
+    margin-top: -500px;
+    margin-bottom: 1.5rem;
+    h3 {
+      font-size: 1.5rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+    }
+    .customerItem {
+      width: 90%;
+    }
+  }
+}
+
+// contact
+.contact-bg {
+  background-color: $very-pale-red;
+  padding-top: 4rem;
+  padding-bottom: 5.75rem;
+  .contact {
+    max-width: 792px;
+    margin: 0 auto;
+    h3 {
+      font-size: 3rem;
+      text-align: center;
+      padding-bottom: 1.5rem;
+    }
+    h4 {
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .fromItem {
+      margin-bottom: 1rem;
+      label {
+        display: block;
+        margin-bottom: 0.4rem;
+      }
+      input,
+      textarea {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid #000;
+        padding: 0.8rem 1rem;
+      }
+    }
+    .fromChekbox {
+      margin-bottom: 2.6rem;
+      input {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin: 0;
+        margin-right: 0.4rem;
+        background-color: transparent;
+      }
+    }
+    .contactBtn {
+      button {
+        padding: 1rem 3.6rem;
+        border: none;
+        background-color: $primary;
+        color: #fff;
+        cursor: pointer;
+        &:hover {
+          background-color: darken($primary, 7);
+        }
+      }
+    }
+  }
+  // contact pad-992 斷點設定
+  @include pad {
+    .contact {
+      width: 80%;
+    }
+  }
+  // contact mobile-767 斷點設定
+  @include mobile {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    .contact {
+      width: 90%;
+      h3 {
+        font-size: 2rem;
+      }
+      h4 {
+        font-size: 1rem;
+      }
+      .fromChekbox {
+        input {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

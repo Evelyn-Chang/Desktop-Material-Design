@@ -1,0 +1,113 @@
+// faqbanner 區塊
+.faqBanner {
+  background-image: url(images/FAQ/72.png);
+  height: 304px;
+  @include bg-cover;
+  .faqInner {
+    height: 100%;
+    padding-bottom: 1rem;
+    h2 {
+      font-size: 3rem;
+      margin-right: 10px;
+    }
+    img {
+      width: 48px;
+    }
+  }
+
+  // faqbanner pad-992 斷點設定
+  @include pad {
+    padding-left: 3rem;
+    .faqInner {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+  // faqbanner mobile-767 斷點設定
+  @include mobile {
+    height: 143px;
+    padding-left: 0.68rem;
+    .faqInner {
+      h2 {
+        font-size: 1.75rem;
+      }
+      img {
+        width: 24px;
+      }
+    }
+  }
+}
+
+// question 區塊
+.question {
+  padding-top: 8rem;
+  padding-bottom: 9.75rem;
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .list {
+    border: 1px solid #000;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    .listItem {
+      border-bottom: 1px solid #000;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+    .listHeader {
+      padding: 22px 38px;
+      h4 {
+        font-size: 1.25rem;
+      }
+    }
+    .listBody {
+      padding: 22px 38px;
+      background-color: #f2f2f2;
+      border-top: 1px solid #000;
+    }
+  }
+
+  // question pad-992 斷點設定
+  @include pad {
+    padding: 2.5rem 3rem;
+    padding-bottom: 6.5rem;
+    h3 {
+      font-size: 1.75rem;
+    }
+    .list {
+      .listHeader {
+        padding: 1rem 1.5rem;
+        h4 {
+          font-size: 1rem;
+        } 
+      }
+      .listBody {
+        padding: 1rem 1.5rem;
+      }
+      p {
+        font-size: 0.87rem;
+      }
+    }
+  }
+  // question mobile-767 斷點設定
+  @include mobile {
+    padding: 1.5rem 0.68rem;
+    padding-bottom: 4.5rem;
+    h3 {
+      font-size: 1.25rem;
+    }
+    .list {
+      .listHeader {
+        padding: 1rem;
+      }
+      .listBody {
+        padding: 1rem;
+      }
+    }
+  }
+}
